@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Staff Augmentation – IDEANEST X</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hire dedicated developers, designers and game talent from IDEANEST X via staff augmentation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-mark"><div class="logo-inner">IX</div></div>
+        <div class="logo-text">
+          <span>IDEANEST X</span>
+          <span>APPS · WEB · GAMES</span>
+        </div>
+      </div>
+      <nav>
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
+        <div id="nav-links" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="staff-augmentation.html" class="active">Staff Aug</a>
+          <a href="contact.html" class="nav-cta">Start a Project</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container page-narrow">
+        <div class="section-eyebrow">STAFF AUGMENTATION</div>
+        <h1>Hire Dedicated Developers & Game Talent</h1>
+        <p>
+          Instead of full-time hiring and HR overhead, you can plug our people directly into your projects.
+          You manage the roadmap, we handle the people and compliance.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container page-narrow">
+        <h2>What you get</h2>
+        <ul>
+          <li>Dedicated resource that works as part of your team.</li>
+          <li>We handle contracts, NDAs, payroll and replacements.</li>
+          <li>Single invoice instead of multiple individual vendors.</li>
+        </ul>
+
+        <h2>Roles available</h2>
+        <ul>
+          <li>Web developers (React, Next.js, Node)</li>
+          <li>App developers (Flutter, Android)</li>
+          <li>Unity / Unreal game developers</li>
+          <li>UI/UX designers</li>
+          <li>QA testers</li>
+        </ul>
+
+        <h2>Engagement model</h2>
+        <ul>
+          <li>Minimum 1-month engagement, extendable.</li>
+          <li>Monthly or hourly billing with timesheets.</li>
+          <li>Overlap with your time zone wherever possible.</li>
+        </ul>
+
+        <h2>Compliance & paperwork</h2>
+        <ul>
+          <li>Service agreement / MSA + NDAs.</li>
+          <li>GST invoices, MSME-backed payment terms for Indian clients.</li>
+          <li>Clean documentation for your finance and legal teams.</li>
+        </ul>
+
+        <h2>Next steps</h2>
+        <p>
+          Share what skills you need, how senior the person should be, and your budget range.
+          We’ll send you a rate card, sample profiles and suggested start date.
+        </p>
+
+        <div style="margin-top:1.4rem;">
+          <a href="contact.html"><button class="btn-primary">Share your requirements</button></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© <span id="year"></span> IDEANEST X · Staff Augmentation</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+function toggleNav(){const l=document.getElementById('nav-links');l.classList.toggle('is-open');}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

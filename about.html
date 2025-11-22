@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About – IDEANEST X</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About IDEANEST X, a hybrid studio focused on apps, websites and game experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-mark"><div class="logo-inner">IX</div></div>
+        <div class="logo-text">
+          <span>IDEANEST X</span>
+          <span>APPS · WEB · GAMES</span>
+        </div>
+      </div>
+      <nav>
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
+        <div id="nav-links" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html" class="active">About</a>
+          <a href="staff-augmentation.html">Staff Aug</a>
+          <a href="contact.html" class="nav-cta">Start a Project</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container page-narrow">
+        <div class="section-eyebrow">ABOUT</div>
+        <h1>About IDEANEST X</h1>
+        <p>
+          IDEANEST X is a hybrid studio focused on building apps, websites and game experiences.
+          We sit at the intersection of software development and game design — which means we care
+          about both performance <em>and</em> how it feels to use.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container page-narrow">
+        <h2>Who we are</h2>
+        <p>
+          We’re a small, focused team based in Tamil Nadu, working with clients across India and beyond.
+          We’re comfortable being your full development team or an extended arm to your existing team.
+        </p>
+        <ul>
+          <li>Product mindset – we think in journeys, not just pages and screens.</li>
+          <li>Tech-first but design-aware – we want things to feel good and run fast.</li>
+          <li>Honest about constraints – if your scope or budget is unrealistic, we’ll say it.</li>
+        </ul>
+
+        <h2 id="registrations">Registrations & compliance</h2>
+        <p>
+          IDEANEST X is MSME-registered and GST-ready. As we grow, we’re structuring things to be
+          private-limited ready so that investment, equity and complex contracts become easier.
+        </p>
+        <ul>
+          <li>MSME registration for easier B2B and government alignment.</li>
+          <li>GST-compliant invoicing and returns.</li>
+          <li>Separate current account for business finances.</li>
+        </ul>
+
+        <h2>How we like to work</h2>
+        <ul>
+          <li>Clear written scope before we start building.</li>
+          <li>Regular check-ins, not just “see you at launch”.</li>
+          <li>Transparent pricing & milestone-based payments.</li>
+        </ul>
+
+        <h2>Future-facing</h2>
+        <p>
+          From government tenders and platforms like GeM to game grants and publisher deals,
+          IDEANEST X is being built with the long term in mind — not as a one-off freelance profile.
+        </p>
+
+        <!-- Optional founder note -->
+        <h2>Founder note</h2>
+        <p style="font-size:0.88rem;">
+          This section can be your honest story in your own voice – why you started IDEANEST X,
+          what kind of work you say yes/no to, and what people can expect working with you.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© <span id="year"></span> IDEANEST X · Web · Apps · Games</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+function toggleNav(){const l=document.getElementById('nav-links');l.classList.toggle('is-open');}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

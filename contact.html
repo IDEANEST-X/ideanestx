@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – IDEANEST X</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact IDEANEST X to discuss your web, app, game or staff augmentation requirements." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-mark"><div class="logo-inner">IX</div></div>
+        <div class="logo-text">
+          <span>IDEANEST X</span>
+          <span>APPS · WEB · GAMES</span>
+        </div>
+      </div>
+      <nav>
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
+        <div id="nav-links" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="staff-augmentation.html">Staff Aug</a>
+          <a href="contact.html" class="nav-cta active">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container page-narrow">
+        <div class="section-eyebrow">CONTACT</div>
+        <h1>Let’s talk about your project</h1>
+        <p>
+          You don’t need a perfect brief. A rough idea, audience and timing is enough for us to suggest realistic options.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h2 class="list-item-title">Contact details</h2>
+          <div class="list">
+            <div class="contact-row">
+              Email: <span>hello@ideanestx.com</span> <!-- TODO: change -->
+            </div>
+            <div class="contact-row">
+              WhatsApp / Phone: <span>+91-00000-00000</span> <!-- TODO: change -->
+            </div>
+            <div class="contact-row">
+              Location: <span>Tamil Nadu, India · Remote-friendly</span>
+            </div>
+          </div>
+          <p class="contact-meta">
+            Prefer WhatsApp or a quick call? Send a short intro and we’ll reply with follow-up questions or a call slot.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <h2 class="list-item-title">Project enquiry form</h2>
+          <!-- You can wire this to Formspree / any backend later -->
+          <form class="form" action="#" method="post">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-row">
+              <label for="company">Company (optional)</label>
+              <input id="company" name="company" type="text" />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone / WhatsApp</label>
+              <input id="phone" name="phone" type="text" />
+            </div>
+            <div class="form-row">
+              <label for="type">Type of work</label>
+              <select id="type" name="type">
+                <option>Web Development</option>
+                <option>App Development</option>
+                <option>Game Development</option>
+                <option>UI/UX & Branding</option>
+                <option>Staff Augmentation</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="budget">Budget range</label>
+              <select id="budget" name="budget">
+                <option value="<1L">&lt; ₹1L</option>
+                <option value="1-3L">₹1–3L</option>
+                <option value="3-10L">₹3–10L</option>
+                <option value="10L+">₹10L+</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Short description</label>
+              <textarea id="message" name="message" placeholder="What are you trying to build? Who is it for? Any reference links?"></textarea>
+            </div>
+            <div>
+              <button class="btn-primary" type="submit">Send Enquiry</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© <span id="year"></span> IDEANEST X · Web · Apps · Games</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+function toggleNav(){const l=document.getElementById('nav-links');l.classList.toggle('is-open');}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

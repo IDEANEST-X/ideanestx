@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Terms & Conditions – IDEANEST X</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-mark"><div class="logo-inner">IX</div></div>
+        <div class="logo-text">
+          <span>IDEANEST X</span>
+          <span>APPS · WEB · GAMES</span>
+        </div>
+      </div>
+      <nav>
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
+        <div id="nav-links" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="staff-augmentation.html">Staff Aug</a>
+          <a href="contact.html" class="nav-cta">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container page-narrow">
+        <div class="section-eyebrow">LEGAL</div>
+        <h1>Terms & Conditions</h1>
+        <p>
+          These terms apply to your use of the IDEANEST X website. Any actual project or engagement
+          will be governed by separate written agreements.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container page-narrow">
+        <h2>Website content</h2>
+        <p>
+          All content on this website (text, visuals, layouts) is owned by IDEANEST X unless otherwise stated.
+          You may not copy, reuse or redistribute content without permission.
+        </p>
+
+        <h2>Demo & concept projects</h2>
+        <p>
+          Some of the projects shown on this site are internal concepts or prototypes.
+          Where projects are not tied to a real client, we label them as in-house concepts or internal prototypes.
+        </p>
+
+        <h2>No automatic offer</h2>
+        <p>
+          Information on this site is not a binding offer. Project scopes, timelines and pricing are always confirmed
+          in writing via proposal / statement of work (SOW).
+        </p>
+
+        <h2>Engagement terms</h2>
+        <p>
+          If you decide to work with IDEANEST X, that engagement will be covered by:
+        </p>
+        <ul>
+          <li>Master Service Agreement (MSA) or service agreement</li>
+          <li>Project-specific SOWs</li>
+          <li>NDAs where required</li>
+        </ul>
+
+        <h2>Liability</h2>
+        <p>
+          We aim to deliver stable, well-tested work, but no online system is perfectly risk-free.
+          Any warranties, limitations of liability and related details are defined in the signed agreements for each project.
+        </p>
+
+        <h2>Changes to these terms</h2>
+        <p>
+          We may update these terms from time to time. Continued use of the website after changes
+          indicates your acceptance of the updated terms.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          For questions regarding these terms, contact us at <strong>hello@ideanestx.com</strong>
+          (replace with your actual email).
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© <span id="year"></span> IDEANEST X</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+function toggleNav(){const l=document.getElementById('nav-links');l.classList.toggle('is-open');}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

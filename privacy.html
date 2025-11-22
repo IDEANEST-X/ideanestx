@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Privacy Policy – IDEANEST X</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-mark"><div class="logo-inner">IX</div></div>
+        <div class="logo-text">
+          <span>IDEANEST X</span>
+          <span>APPS · WEB · GAMES</span>
+        </div>
+      </div>
+      <nav>
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
+        <div id="nav-links" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="staff-augmentation.html">Staff Aug</a>
+          <a href="contact.html" class="nav-cta">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container page-narrow">
+        <div class="section-eyebrow">LEGAL</div>
+        <h1>Privacy Policy</h1>
+        <p>
+          This is a simple overview of how IDEANEST X handles information collected through this website.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container page-narrow">
+        <h2>Information we collect</h2>
+        <p>
+          We only collect information that you voluntarily submit through forms, email or other direct contact.
+          This typically includes:
+        </p>
+        <ul>
+          <li>Name</li>
+          <li>Contact details (email, phone, company)</li>
+          <li>Project details or requirements you choose to share</li>
+        </ul>
+
+        <h2>How we use your information</h2>
+        <p>We use the information you provide to:</p>
+        <ul>
+          <li>Respond to your enquiries and send proposals.</li>
+          <li>Follow up on ongoing or potential projects.</li>
+          <li>Maintain basic business records and communication history.</li>
+        </ul>
+
+        <h2>What we do not do</h2>
+        <ul>
+          <li>We do not sell your data to third parties.</li>
+          <li>We do not share your details publicly without your consent.</li>
+        </ul>
+
+        <h2>Third-party tools</h2>
+        <p>
+          We may use analytics tools (like Google Analytics) to understand basic traffic patterns.
+          These tools may set cookies or collect anonymised usage data. You can control cookies via your browser settings.
+        </p>
+
+        <h2>Data retention</h2>
+        <p>
+          We retain communication and project details as long as reasonably needed for business, legal or accounting purposes.
+          If you want us to delete past correspondence, you can request it via email.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          For any questions regarding this policy, you can reach us at:
+          <strong>hello@ideanestx.com</strong> (replace with your actual email).
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© <span id="year"></span> IDEANEST X</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+function toggleNav(){const l=document.getElementById('nav-links');l.classList.toggle('is-open');}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
